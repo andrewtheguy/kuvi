@@ -38,7 +38,7 @@ function App() {
     <div className="portal">
       <header className="header">
         <h1>kuvi.app</h1>
-        <p className="tagline">Web apps that run entirely in your browser — no backend hosting required</p>
+        <p className="tagline">Open source web apps that run entirely in your browser — no backend hosting required</p>
       </header>
 
       <main className="projects">
