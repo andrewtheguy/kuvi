@@ -4,6 +4,11 @@ import { platforms } from '../data';
 export default function Home() {
     return (
         <div className="home-container">
+            <div className="hero">
+                <h1 className="hero-title">kuvi.app</h1>
+                <p className="hero-tagline">A collection of open source web apps and native utilities</p>
+            </div>
+
             <div className="categories-grid">
                 {platforms.map((platform) => (
                     <Link
