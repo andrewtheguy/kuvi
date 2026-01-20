@@ -80,7 +80,7 @@ export const projects: Project[] = [
     // Standalone Utilities
     {
         name: 'Wormhole RS',
-        description: 'Secure file transfer tool inspired by Magic Wormhole.',
+        description: 'A secure, cross-platform, single-binary peer-to-peer file transfer tool with direct connectivity and AES-256-GCM end-to-end encryption.',
         github: 'https://github.com/andrewtheguy/wormhole-rs',
         category: 'transfer',
         platform: 'standalone',
