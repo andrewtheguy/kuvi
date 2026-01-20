@@ -10,7 +10,7 @@ export default function Home() {
                 >
                     <div className="category-content">
                         <h2>Web Applications</h2>
-                        <p>Instant-access privacy tools running in your browser.</p>
+                        <p>Instant-access tools running in your browser.</p>
                     </div>
                     <div className="category-arrow">→</div>
                 </Link>

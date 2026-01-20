@@ -11,7 +11,7 @@ export default function PlatformView() {
     const platform = type as PlatformId;
     const platformName = platform === 'web' ? 'Web Applications' : 'Standalone Utilities';
     const platformDescription = platform === 'web'
-        ? 'Browser-based privacy tools that run instantly.'
+        ? 'Browser-based tools that run instantly.'
         : 'Native CLI tools and desktop applications for power users.';
 
     // Get only categories that have projects for this platform
