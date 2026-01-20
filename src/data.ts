@@ -16,6 +16,28 @@ export interface Category {
     description: string;
 }
 
+export interface Platform {
+    id: PlatformId;
+    title: string;
+    description: string;
+    image: string;
+}
+
+export const platforms: Platform[] = [
+    {
+        id: 'web',
+        title: 'Web Applications',
+        description: 'Instant-access tools running in your browser.',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop',
+    },
+    {
+        id: 'standalone',
+        title: 'Standalone Utilities',
+        description: 'Powerful CLI and desktop applications for advanced tasks.',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop',
+    },
+];
+
 export const categories: Category[] = [
     {
         id: 'transfer',
@@ -122,7 +144,7 @@ export const projects: Project[] = [
     },
     {
         name: 'Playsound RS',
-        description: 'CLI tool for playing white noise and audio files.',
+        description: 'CLI tool for playing generated white noise.',
         github: 'https://github.com/andrewtheguy/playsoundrs',
         category: 'audio',
         platform: 'standalone',
