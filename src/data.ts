@@ -1,87 +1,130 @@
+export type CategoryId = 'transfer' | 'audio' | 'tools';
+
 export interface Project {
     name: string;
     description: string;
     github: string;
-    subdomain?: string; // Only for web apps
+    subdomain?: string; // If present, it's a web app
+    category: CategoryId;
 }
 
-export const webApps: Project[] = [
+export interface Category {
+    id: CategoryId;
+    title: string;
+    description: string;
+}
+
+export const categories: Category[] = [
+    {
+        id: 'transfer',
+        title: 'Secure Transfer & Networking',
+        description: 'Tools for secure, private data transfer and tunneling.',
+    },
+    {
+        id: 'audio',
+        title: 'Audio & Media',
+        description: 'Speech recognition, streaming, and audio processing tools.',
+    },
+    {
+        id: 'tools',
+        title: 'System & Productivity',
+        description: 'Utilities to organize your files and boost productivity.',
+    },
+];
+
+export const projects: Project[] = [
+    // Transfer
     {
         name: 'QR Secure Share',
         subdomain: 'qrsecure',
-        description: 'A progressive web app for QR-based offline file transfer and text QR generation. Share files between devices with no internet required.',
+        description: 'Offline file transfer and text generation via QR codes.',
         github: 'https://github.com/andrewtheguy/qrcodesecureshare',
+        category: 'transfer',
     },
     {
         name: 'Secure Send',
         subdomain: 'securesend',
-        description: 'A progressive web app for encrypted P2P text and file transfer. PIN-based security with WebRTC direct connections and cloud fallback.',
+        description: 'Encrypted P2P text and file transfer with PIN security.',
         github: 'https://github.com/andrewtheguy/secure-send-web',
+        category: 'transfer',
     },
     {
-        name: 'NostrPad',
-        subdomain: 'nostrpad',
-        description: 'Simple shared notepad powered by Nostr relays. Create a pad, share the link, collaborate in real-time.',
-        github: 'https://github.com/andrewtheguy/nostrpad',
+        name: 'Wormhole RS',
+        description: 'Secure file transfer tool inspired by Magic Wormhole.',
+        github: 'https://github.com/andrewtheguy/wormhole-rs',
+        category: 'transfer',
     },
     {
-        name: 'Audio Player',
-        subdomain: 'audioplayer',
-        description: 'Web-based audio player with HLS streaming support. Play .m3u8 streams with playback position memory.',
-        github: 'https://github.com/andrewtheguy/audioplayer',
+        name: 'Tunnel RS',
+        description: 'High-performance tunneling tool for exposing local servers.',
+        github: 'https://github.com/andrewtheguy/tunnel-rs',
+        category: 'transfer',
+    },
+    {
+        name: 'Tunnel RS Manager',
+        description: 'GUI Manager for tunnel-rs instances.',
+        github: 'https://github.com/andrewtheguy/tunnel-rs-manager',
+        category: 'transfer',
     },
     {
         name: 'Transmitwave',
         subdomain: 'transmitwave',
-        description: 'Data-over-sound transmission using FSK modulation. Send data via audio between devices.',
+        description: 'Data-over-sound transmission using FSK modulation.',
         github: 'https://github.com/andrewtheguy/transmitwave',
+        category: 'transfer',
     },
-];
 
-export const utilities: Project[] = [
+    // Audio
     {
-        name: 'Tunnel RS Manager',
-        description: 'GUI Manager for tunnel-rs instances to easily manage your secure tunnels.',
-        github: 'https://github.com/andrewtheguy/tunnel-rs-manager',
-    },
-    {
-        name: 'Tunnel RS',
-        description: 'High-performance tunneling tool written in Rust for exposing local servers securely.',
-        github: 'https://github.com/andrewtheguy/tunnel-rs',
-    },
-    {
-        name: 'Wormhole RS',
-        description: 'Secure file transfer tool inspired by Magic Wormhole, written in Rust.',
-        github: 'https://github.com/andrewtheguy/wormhole-rs',
-    },
-    {
-        name: 'Dup File Finder RS',
-        description: 'Fast duplicate file finder utility to help reclaim disk space.',
-        github: 'https://github.com/andrewtheguy/dup-file-finder-rs',
-    },
-    {
-        name: 'Audio Pattern Detector',
-        description: 'Utility to detect specific audio patterns or trigger words in real-time streams.',
-        github: 'https://github.com/andrewtheguy/audio_pattern_detector',
-    },
-    {
-        name: 'Save Audio Stream',
-        description: 'Command-line tool to record and save live audio streams to disk.',
-        github: 'https://github.com/andrewtheguy/save_audio_stream',
+        name: 'Audio Player',
+        subdomain: 'audioplayer',
+        description: 'Web-based HLS audio player with position memory.',
+        github: 'https://github.com/andrewtheguy/audioplayer',
+        category: 'audio',
     },
     {
         name: 'Whisper Transcribe Py',
-        description: 'Python wrapper for OpenAI\'s Whisper model to easily transcribe audio files.',
+        description: 'Python wrapper for OpenAI\'s Whisper model.',
         github: 'https://github.com/andrewtheguy/whisper_transcribe_py',
+        category: 'audio',
+    },
+    {
+        name: 'Audio Pattern Detector',
+        description: 'Real-time detection of specific audio patterns.',
+        github: 'https://github.com/andrewtheguy/audio_pattern_detector',
+        category: 'audio',
+    },
+    {
+        name: 'Save Audio Stream',
+        description: 'Record and save live audio streams.',
+        github: 'https://github.com/andrewtheguy/save_audio_stream',
+        category: 'audio',
     },
     {
         name: 'Playsound RS',
-        description: 'Cross-platform Rust library and CLI tool for playing audio files simply.',
+        description: 'Simple CLI tool for playing audio.',
         github: 'https://github.com/andrewtheguy/playsoundrs',
+        category: 'audio',
+    },
+
+    // Tools
+    {
+        name: 'NostrPad',
+        subdomain: 'nostrpad',
+        description: 'Shared notepad powered by Nostr relays.',
+        github: 'https://github.com/andrewtheguy/nostrpad',
+        category: 'tools',
     },
     {
         name: 'File Organizer',
-        description: 'CLI tool to automatically organize files into directories based on rules.',
+        description: 'CLI tool to organize files based on rules.',
         github: 'https://github.com/andrewtheguy/file-organizer',
+        category: 'tools',
+    },
+    {
+        name: 'Dup File Finder RS',
+        description: 'Fast duplicate file finder utility.',
+        github: 'https://github.com/andrewtheguy/dup-file-finder-rs',
+        category: 'tools',
     },
 ];
