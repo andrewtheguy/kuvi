@@ -87,7 +87,7 @@ export const projects: Project[] = [
     },
     {
         name: 'Tunnel RS',
-        description: 'High-performance tunneling tool for exposing local servers.',
+        description: 'Convenient tunneling tool for exposing local servers securely.',
         github: 'https://github.com/andrewtheguy/tunnel-rs',
         category: 'transfer',
         platform: 'standalone',
