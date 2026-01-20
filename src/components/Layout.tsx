@@ -5,7 +5,7 @@ export default function Layout() {
         <div className="portal">
             <header className="header">
                 <h1>kuvi.app</h1>
-                <p className="tagline">Open source web apps that run entirely in your browser — no backend hosting required</p>
+                <p className="tagline">Open source web apps and native utilities built for privacy and performance</p>
 
                 <nav className="nav-menu">
                     <NavLink
