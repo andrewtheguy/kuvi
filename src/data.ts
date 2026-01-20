@@ -101,7 +101,7 @@ export const projects: Project[] = [
     },
     {
         name: 'Whisper Transcribe Py',
-        description: 'Python wrapper for OpenAI\'s Whisper model.',
+        description: 'Transcribe files, microphone input, or audio streams using Whisper with VAD.',
         github: 'https://github.com/andrewtheguy/whisper_transcribe_py',
         category: 'audio',
         platform: 'standalone',
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     },
     {
         name: 'Playsound RS',
-        description: 'Simple CLI tool for playing audio.',
+        description: 'CLI tool for playing white noise and audio files.',
         github: 'https://github.com/andrewtheguy/playsoundrs',
         category: 'audio',
         platform: 'standalone',
