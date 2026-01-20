@@ -37,7 +37,7 @@ export default function Layout() {
             </main>
 
             <footer className="footer">
-                <p>Static sites powered by your browser and free public services. All tools mentioned on the website are open source.</p>
+                <p>All tools mentioned on the website are open source.</p>
             </footer>
         </div>
     );
