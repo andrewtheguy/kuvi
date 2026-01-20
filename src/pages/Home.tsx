@@ -5,7 +5,6 @@ export default function Home() {
     return (
         <div className="home-container">
             <div className="hero">
-                <img src="/kuvi.svg" alt="Kuvi Logo" className="hero-logo" />
                 <h1 className="hero-title">kuvi.app</h1>
                 <p className="hero-tagline">A collection of open source web apps and native utilities</p>
             </div>
