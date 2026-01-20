@@ -7,7 +7,7 @@ export default function Layout() {
                 <Link to="/" className="branding-link">
                     <h1>kuvi.app</h1>
                 </Link>
-                <p className="tagline">Open source web apps and native utilities built for privacy and performance</p>
+                <p className="tagline">A collection of open source web apps and native utilities</p>
 
                 <nav className="nav-menu">
                     <NavLink
