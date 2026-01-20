@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import CategoryView from './pages/CategoryView';
+import PlatformView from './pages/PlatformView';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="category/:id" element={<CategoryView />} />
+        <Route path="platform/:type" element={<PlatformView />} />
       </Route>
     </Routes>
   );

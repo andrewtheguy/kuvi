@@ -18,22 +18,16 @@ export default function Layout() {
                         Home
                     </NavLink>
                     <NavLink
-                        to="/category/transfer"
+                        to="/platform/web"
                         className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                     >
-                        Transfer
+                        Web Apps
                     </NavLink>
                     <NavLink
-                        to="/category/audio"
+                        to="/platform/standalone"
                         className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                     >
-                        Audio
-                    </NavLink>
-                    <NavLink
-                        to="/category/tools"
-                        className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
-                    >
-                        System
+                        Standalone
                     </NavLink>
                 </nav>
             </header>
