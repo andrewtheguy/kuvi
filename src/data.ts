@@ -115,13 +115,6 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
-        name: 'Tunnel RS Manager',
-        description: 'GUI Manager for tunnel-rs instances.',
-        github: 'https://github.com/andrewtheguy/tunnel-rs-manager',
-        category: 'transfer',
-        platform: 'standalone',
-    },
-    {
         name: 'Whisper Transcribe Py',
         description: 'Transcribe files, microphone input, or audio streams using Whisper with VAD.',
         github: 'https://github.com/andrewtheguy/whisper_transcribe_py',
