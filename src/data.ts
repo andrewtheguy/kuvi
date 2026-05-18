@@ -90,6 +90,13 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
+        name: 'VAD Transcribe Py',
+        description: 'CLI audio transcription tool combining Silero VAD with pluggable ASR backends (Whisper, Moonshine, Qwen3-ASR, GLM-ASR).',
+        github: 'https://github.com/andrewtheguy/vad_transcribe_py',
+        category: 'audio',
+        platform: 'standalone',
+    },
+    {
         name: 'Audio Pattern Detector',
         description: 'Real-time detection of specific audio patterns.',
         github: 'https://github.com/andrewtheguy/audio_pattern_detector',
@@ -98,7 +105,7 @@ export const projects: Project[] = [
     },
     {
         name: 'Save Audio Stream',
-        description: 'Record and save live audio streams.',
+        description: 'Live audio stream relay that records Shoutcast/Icecast broadcasts and syncs them to remote servers for HLS web playback.',
         github: 'https://github.com/andrewtheguy/save_audio_stream',
         category: 'audio',
         platform: 'standalone',
@@ -121,6 +128,13 @@ export const projects: Project[] = [
         name: 'File Organizer',
         description: 'CLI tool to organize files based on rules.',
         github: 'https://github.com/andrewtheguy/file-organizer',
+        category: 'tools',
+        platform: 'standalone',
+    },
+    {
+        name: 'S3 Browser',
+        description: 'Web-based file manager for AWS S3 and S3-compatible storage with upload, download, and preview support.',
+        github: 'https://github.com/andrewtheguy/s3browser',
         category: 'tools',
         platform: 'standalone',
     },
