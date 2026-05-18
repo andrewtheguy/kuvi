@@ -152,4 +152,18 @@ export const projects: Project[] = [
         category: 'tools',
         platform: 'standalone',
     },
+    {
+        name: 'Markdown Viewer',
+        description: 'Self-hosted web viewer for markdown and text files stored in S3, with SQLite FTS5 full-text search.',
+        github: 'https://github.com/andrewtheguy/mdviewer',
+        category: 'tools',
+        platform: 'standalone',
+    },
+    {
+        name: 'MyWebTerm',
+        description: 'Web-based terminal that runs your shell in the browser via Bun PTY, with session persistence and mobile support.',
+        github: 'https://github.com/andrewtheguy/mywebterm',
+        category: 'tools',
+        platform: 'standalone',
+    },
 ];
