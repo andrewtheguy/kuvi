@@ -1,10 +1,23 @@
-import { Globe } from "lucide-react";
+import {
+  Globe,
+  ArrowRightLeft,
+  AudioLines,
+  Wrench,
+  type LucideIcon,
+} from "lucide-react";
 import {
   projects,
   categories,
+  type CategoryId,
   type PlatformId,
 } from "../data";
 import type { Route } from "./+types/platform";
+
+const categoryFallbackIcon: Record<CategoryId, LucideIcon> = {
+  transfer: ArrowRightLeft,
+  audio: AudioLines,
+  tools: Wrench,
+};
 
 const SITE_URL = "https://kuvi.app";
 const OG_IMAGE = `${SITE_URL}/kuvi.svg`;
@@ -103,8 +116,17 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
             <h3 className="platform-category-title">{category.title}</h3>
 
             <div className="projects">
-              {categoryProjects.map((project) => (
+              {categoryProjects.map((project) => {
+                const FallbackIcon = categoryFallbackIcon[project.category];
+                return (
                 <div key={project.name} className="card">
+                  <div className="card-icon">
+                    {project.icon ? (
+                      <img src={project.icon} alt="" loading="lazy" />
+                    ) : (
+                      <FallbackIcon size={28} strokeWidth={1.5} aria-hidden />
+                    )}
+                  </div>
                   {project.subdomain ? (
                     <a
                       href={`https://${project.subdomain}.kuvi.app`}
@@ -152,7 +174,8 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                     </a>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
             <div className="platform-category-divider"></div>
           </div>

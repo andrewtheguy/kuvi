@@ -8,6 +8,7 @@ export interface Project {
     subdomain?: string;
     category: CategoryId;
     platform: PlatformId;
+    icon?: string;
 }
 
 export interface Category {
@@ -65,6 +66,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/qrcodesecureshare',
         category: 'transfer',
         platform: 'web',
+        icon: '/icons/qr-secure-share.svg',
     },
     {
         name: 'Secure Send',
@@ -73,6 +75,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/secure-send-web',
         category: 'transfer',
         platform: 'web',
+        icon: '/icons/secure-send.svg',
     },
     // Standalone Utilities
     {
@@ -116,6 +119,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/s3player',
         category: 'audio',
         platform: 'standalone',
+        icon: '/icons/s3-player.svg',
     },
     {
         name: 'S3 Player App',
@@ -123,6 +127,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/s3player-app',
         category: 'audio',
         platform: 'standalone',
+        icon: '/icons/s3-player-app.svg',
     },
     {
         name: 'File Organizer',
@@ -137,6 +142,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/s3browser',
         category: 'tools',
         platform: 'standalone',
+        icon: '/icons/s3-browser.svg',
     },
     {
         name: 'Dup File Finder RS',
@@ -158,6 +164,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/mdviewer',
         category: 'tools',
         platform: 'standalone',
+        icon: '/icons/markdown-viewer.svg',
     },
     {
         name: 'MyWebTerm',
@@ -165,5 +172,6 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/mywebterm',
         category: 'tools',
         platform: 'standalone',
+        icon: '/icons/mywebterm.svg',
     },
 ];
