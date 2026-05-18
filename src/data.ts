@@ -74,31 +74,6 @@ export const projects: Project[] = [
         category: 'transfer',
         platform: 'web',
     },
-    {
-        name: 'NostrPad',
-        subdomain: 'nostrpad',
-        description: 'Shared notepad powered by Nostr relays.',
-        github: 'https://github.com/andrewtheguy/nostrpad',
-        category: 'tools',
-        platform: 'web',
-    },
-    {
-        name: 'Audio Player',
-        subdomain: 'audioplayer',
-        description: 'Web-based HLS audio player with position memory.',
-        github: 'https://github.com/andrewtheguy/audioplayer',
-        category: 'audio',
-        platform: 'web',
-    },
-    {
-        name: 'Transmitwave',
-        subdomain: 'transmitwave',
-        description: 'Data-over-sound transmission using FSK modulation.',
-        github: 'https://github.com/andrewtheguy/transmitwave',
-        category: 'transfer',
-        platform: 'web',
-    },
-
     // Standalone Utilities
     {
         name: 'Wormhole RS',
@@ -115,13 +90,6 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
-        name: 'Whisper Transcribe Py',
-        description: 'Transcribe files, microphone input, or audio streams using Whisper with VAD.',
-        github: 'https://github.com/andrewtheguy/whisper_transcribe_py',
-        category: 'audio',
-        platform: 'standalone',
-    },
-    {
         name: 'Audio Pattern Detector',
         description: 'Real-time detection of specific audio patterns.',
         github: 'https://github.com/andrewtheguy/audio_pattern_detector',
@@ -132,13 +100,6 @@ export const projects: Project[] = [
         name: 'Save Audio Stream',
         description: 'Record and save live audio streams.',
         github: 'https://github.com/andrewtheguy/save_audio_stream',
-        category: 'audio',
-        platform: 'standalone',
-    },
-    {
-        name: 'Playsound RS',
-        description: 'CLI tool for playing generated white noise.',
-        github: 'https://github.com/andrewtheguy/playsoundrs',
         category: 'audio',
         platform: 'standalone',
     },
