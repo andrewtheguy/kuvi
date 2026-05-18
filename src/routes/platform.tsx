@@ -38,7 +38,7 @@ function getPlatformCopy(type: string): PlatformCopy | null {
     return {
       title: "Web Applications",
       pageTitle: "Web Applications — kuvi.app",
-      description: `Browser-based open-source tools that run instantly. Includes ${sample}.`,
+      description: `Browser-based tools that run instantly or self-hosted. Includes ${sample}.`,
     };
   }
   if (type === "standalone") {
@@ -101,7 +101,7 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
         <h2>{copy.title}</h2>
         <p>
           {type === "web"
-            ? "Browser-based tools that run instantly."
+            ? "Browser-based tools that run instantly or self-hosted."
             : "Native CLI tools and desktop applications for power users."}
         </p>
       </div>

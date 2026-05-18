@@ -28,7 +28,7 @@ export const platforms: Platform[] = [
     {
         id: 'web',
         title: 'Web Applications',
-        description: 'Instant-access tools running in your browser.',
+        description: 'Browser-based tools that run instantly or self-hosted.',
         image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop',
     },
     {
@@ -118,7 +118,7 @@ export const projects: Project[] = [
         description: 'Password-gated player for S3-hosted radio recordings, with resume playback and single-session takeover.',
         github: 'https://github.com/andrewtheguy/s3player',
         category: 'audio',
-        platform: 'standalone',
+        platform: 'web',
         icon: '/icons/s3-player.svg',
     },
     {
@@ -141,7 +141,7 @@ export const projects: Project[] = [
         description: 'Web-based file manager for AWS S3 and S3-compatible storage with upload, download, and preview support.',
         github: 'https://github.com/andrewtheguy/s3browser',
         category: 'tools',
-        platform: 'standalone',
+        platform: 'web',
         icon: '/icons/s3-browser.svg',
     },
     {
@@ -163,7 +163,7 @@ export const projects: Project[] = [
         description: 'Self-hosted web viewer for markdown and text files stored in S3, with SQLite FTS5 full-text search.',
         github: 'https://github.com/andrewtheguy/mdviewer',
         category: 'tools',
-        platform: 'standalone',
+        platform: 'web',
         icon: '/icons/markdown-viewer.svg',
     },
     {
@@ -171,7 +171,7 @@ export const projects: Project[] = [
         description: 'Web-based terminal that runs your shell in the browser via Bun PTY, with session persistence and mobile support.',
         github: 'https://github.com/andrewtheguy/mywebterm',
         category: 'tools',
-        platform: 'standalone',
+        platform: 'web',
         icon: '/icons/mywebterm.svg',
     },
 ];
