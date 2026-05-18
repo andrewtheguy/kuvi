@@ -104,6 +104,20 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
+        name: 'S3 Player',
+        description: 'Password-gated player for S3-hosted radio recordings, with resume playback and single-session takeover.',
+        github: 'https://github.com/andrewtheguy/s3player',
+        category: 'audio',
+        platform: 'standalone',
+    },
+    {
+        name: 'S3 Player App',
+        description: 'SwiftUI iOS/macOS client for the S3 Player backend, with lock-screen Now Playing and background audio.',
+        github: 'https://github.com/andrewtheguy/s3player-app',
+        category: 'audio',
+        platform: 'standalone',
+    },
+    {
         name: 'File Organizer',
         description: 'CLI tool to organize files based on rules.',
         github: 'https://github.com/andrewtheguy/file-organizer',
