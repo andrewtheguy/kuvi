@@ -145,4 +145,11 @@ export const projects: Project[] = [
         category: 'tools',
         platform: 'standalone',
     },
+    {
+        name: 'Systemdmgr',
+        description: 'Terminal UI for browsing and managing systemd units, with live log tailing and unit actions.',
+        github: 'https://github.com/andrewtheguy/systemdmgr',
+        category: 'tools',
+        platform: 'standalone',
+    },
 ];
