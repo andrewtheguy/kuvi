@@ -8,6 +8,7 @@ export interface Project {
     subdomain?: string;
     category: CategoryId;
     platform: PlatformId;
+    icon?: string;
 }
 
 export interface Category {
@@ -65,6 +66,7 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/qrcodesecureshare',
         category: 'transfer',
         platform: 'web',
+        icon: '/icons/qr-secure-share.svg',
     },
     {
         name: 'Secure Send',
@@ -73,32 +75,8 @@ export const projects: Project[] = [
         github: 'https://github.com/andrewtheguy/secure-send-web',
         category: 'transfer',
         platform: 'web',
+        icon: '/icons/secure-send.svg',
     },
-    {
-        name: 'NostrPad',
-        subdomain: 'nostrpad',
-        description: 'Shared notepad powered by Nostr relays.',
-        github: 'https://github.com/andrewtheguy/nostrpad',
-        category: 'tools',
-        platform: 'web',
-    },
-    {
-        name: 'Audio Player',
-        subdomain: 'audioplayer',
-        description: 'Web-based HLS audio player with position memory.',
-        github: 'https://github.com/andrewtheguy/audioplayer',
-        category: 'audio',
-        platform: 'web',
-    },
-    {
-        name: 'Transmitwave',
-        subdomain: 'transmitwave',
-        description: 'Data-over-sound transmission using FSK modulation.',
-        github: 'https://github.com/andrewtheguy/transmitwave',
-        category: 'transfer',
-        platform: 'web',
-    },
-
     // Standalone Utilities
     {
         name: 'Wormhole RS',
@@ -115,9 +93,9 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
-        name: 'Whisper Transcribe Py',
-        description: 'Transcribe files, microphone input, or audio streams using Whisper with VAD.',
-        github: 'https://github.com/andrewtheguy/whisper_transcribe_py',
+        name: 'VAD Transcribe Py',
+        description: 'CLI audio transcription tool combining Silero VAD with pluggable ASR backends (Whisper, Moonshine, Qwen3-ASR, GLM-ASR).',
+        github: 'https://github.com/andrewtheguy/vad_transcribe_py',
         category: 'audio',
         platform: 'standalone',
     },
@@ -130,17 +108,26 @@ export const projects: Project[] = [
     },
     {
         name: 'Save Audio Stream',
-        description: 'Record and save live audio streams.',
+        description: 'Live audio stream relay that records Shoutcast/Icecast broadcasts and syncs them to remote servers for HLS web playback.',
         github: 'https://github.com/andrewtheguy/save_audio_stream',
         category: 'audio',
         platform: 'standalone',
     },
     {
-        name: 'Playsound RS',
-        description: 'CLI tool for playing generated white noise.',
-        github: 'https://github.com/andrewtheguy/playsoundrs',
+        name: 'S3 Player',
+        description: 'Password-gated player for S3-hosted radio recordings, with resume playback and single-session takeover.',
+        github: 'https://github.com/andrewtheguy/s3player',
         category: 'audio',
         platform: 'standalone',
+        icon: '/icons/s3-player.svg',
+    },
+    {
+        name: 'S3 Player App',
+        description: 'SwiftUI iOS/macOS client for the S3 Player backend, with lock-screen Now Playing and background audio.',
+        github: 'https://github.com/andrewtheguy/s3player-app',
+        category: 'audio',
+        platform: 'standalone',
+        icon: '/icons/s3-player-app.svg',
     },
     {
         name: 'File Organizer',
@@ -150,10 +137,41 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
+        name: 'S3 Browser',
+        description: 'Web-based file manager for AWS S3 and S3-compatible storage with upload, download, and preview support.',
+        github: 'https://github.com/andrewtheguy/s3browser',
+        category: 'tools',
+        platform: 'standalone',
+        icon: '/icons/s3-browser.svg',
+    },
+    {
         name: 'Dup File Finder RS',
         description: 'Fast duplicate file finder utility.',
         github: 'https://github.com/andrewtheguy/dup-file-finder-rs',
         category: 'tools',
         platform: 'standalone',
+    },
+    {
+        name: 'Systemdmgr',
+        description: 'Terminal UI for browsing and managing systemd units, with live log tailing and unit actions.',
+        github: 'https://github.com/andrewtheguy/systemdmgr',
+        category: 'tools',
+        platform: 'standalone',
+    },
+    {
+        name: 'Markdown Viewer',
+        description: 'Self-hosted web viewer for markdown and text files stored in S3, with SQLite FTS5 full-text search.',
+        github: 'https://github.com/andrewtheguy/mdviewer',
+        category: 'tools',
+        platform: 'standalone',
+        icon: '/icons/markdown-viewer.svg',
+    },
+    {
+        name: 'MyWebTerm',
+        description: 'Web-based terminal that runs your shell in the browser via Bun PTY, with session persistence and mobile support.',
+        github: 'https://github.com/andrewtheguy/mywebterm',
+        category: 'tools',
+        platform: 'standalone',
+        icon: '/icons/mywebterm.svg',
     },
 ];
