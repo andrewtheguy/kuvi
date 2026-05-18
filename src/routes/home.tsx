@@ -4,7 +4,7 @@ import type { Route } from "./+types/home";
 const SITE_URL = "https://kuvi.app";
 const TITLE = "kuvi.app — open-source web apps and native utilities";
 const DESCRIPTION =
-  "A collection of open source web apps and native utilities for secure transfer, audio, and productivity.";
+  "A collection of open source web apps and native utilities I actively use for secure transfer, audio, and productivity.";
 const OG_IMAGE = `${SITE_URL}/kuvi.svg`;
 
 export const meta: Route.MetaFunction = () => [
@@ -26,7 +26,7 @@ export default function Home() {
       <div className="hero">
         <h1 className="hero-title">kuvi.app</h1>
         <p className="hero-tagline">
-          A collection of open source web apps and native utilities
+          A collection of open source web apps and native utilities I actively use
         </p>
       </div>
 
