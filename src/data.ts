@@ -79,9 +79,9 @@ export const projects: Project[] = [
     },
     // Standalone Utilities
     {
-        name: 'Wormhole RS',
+        name: 'Beam RS',
         description: 'A secure, cross-platform, single-binary peer-to-peer file transfer tool with direct connectivity and AES-256-GCM end-to-end encryption.',
-        github: 'https://github.com/andrewtheguy/wormhole-rs',
+        github: 'https://github.com/andrewtheguy/beam-rs',
         category: 'transfer',
         platform: 'standalone',
     },
