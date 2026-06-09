@@ -93,6 +93,13 @@ export const projects: Project[] = [
         platform: 'standalone',
     },
     {
+        name: 'Tunnel RS Manager',
+        description: 'Cross-platform desktop app to manage tunnel-rs client instances, with persistent storage, server grouping, and config import/export.',
+        github: 'https://github.com/andrewtheguy/tunnel-rs-manager',
+        category: 'transfer',
+        platform: 'standalone',
+    },
+    {
         name: 'VAD Transcribe Py',
         description: 'CLI audio transcription tool combining Silero VAD with pluggable ASR backends (Whisper, Moonshine, Qwen3-ASR, GLM-ASR).',
         github: 'https://github.com/andrewtheguy/vad_transcribe_py',
