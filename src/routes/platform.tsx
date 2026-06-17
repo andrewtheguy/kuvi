@@ -12,6 +12,7 @@ import {
   type PlatformId,
 } from "../data";
 import type { Route } from "./+types/platform";
+import { SITE_URL } from "../../site.config.mjs";
 
 const categoryFallbackIcon: Record<CategoryId, LucideIcon> = {
   transfer: ArrowRightLeft,
@@ -19,7 +20,6 @@ const categoryFallbackIcon: Record<CategoryId, LucideIcon> = {
   tools: Wrench,
 };
 
-const SITE_URL = "https://kuvi.app";
 const OG_IMAGE = `${SITE_URL}/kuvi.svg`;
 
 type PlatformCopy = {

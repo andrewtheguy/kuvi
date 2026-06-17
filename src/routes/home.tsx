@@ -1,7 +1,7 @@
 import { platforms } from "../data";
 import type { Route } from "./+types/home";
+import { SITE_URL } from "../../site.config.mjs";
 
-const SITE_URL = "https://kuvi.app";
 const TITLE = "kuvi.app — open-source web apps and native utilities";
 const DESCRIPTION =
   "A collection of open source web apps and native utilities I actively use for secure transfer, audio, and productivity.";

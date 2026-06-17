@@ -9,8 +9,8 @@ import {
 import type { Route } from "./+types/root";
 import indexStylesheet from "./index.css?url";
 import appStylesheet from "./App.css?url";
+import { SITE_URL } from "../site.config.mjs";
 
-const SITE_URL = "https://kuvi.app";
 const SITE_NAME = "kuvi.app";
 const DEFAULT_TITLE = "kuvi.app — open-source web apps and native utilities";
 const DEFAULT_DESCRIPTION =
