@@ -37,7 +37,7 @@ function getPlatformCopy(type: string): PlatformCopy | null {
       .join(", ");
     return {
       title: "Web Applications",
-      pageTitle: "Web Applications — kuvi.app",
+      pageTitle: "Web Applications — kuvi.dev",
       description: `Browser-based tools that run instantly or self-hosted. Includes ${sample}.`,
     };
   }
@@ -49,7 +49,7 @@ function getPlatformCopy(type: string): PlatformCopy | null {
       .join(", ");
     return {
       title: "Standalone Utilities",
-      pageTitle: "Standalone Utilities — kuvi.app",
+      pageTitle: "Standalone Utilities — kuvi.dev",
       description: `Native CLI tools and desktop applications for power users. Includes ${sample}.`,
     };
   }
@@ -67,7 +67,7 @@ export function loader({ params }: Route.LoaderArgs) {
 export const meta: Route.MetaFunction = ({ data, params }) => {
   const copy = data?.copy ?? getPlatformCopy(params.type);
   if (!copy) {
-    return [{ title: "Not Found — kuvi.app" }];
+    return [{ title: "Not Found — kuvi.dev" }];
   }
   const url = `${SITE_URL}/platform/${params.type}`;
   return [
@@ -129,7 +129,7 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                   </div>
                   {project.subdomain ? (
                     <a
-                      href={`https://${project.subdomain}.kuvi.app`}
+                      href={`https://${project.subdomain}.kuvi.dev`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card-title"
@@ -152,7 +152,7 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                   <div className="card-links">
                     {project.subdomain ? (
                       <a
-                        href={`https://${project.subdomain}.kuvi.app`}
+                        href={`https://${project.subdomain}.kuvi.dev`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link"

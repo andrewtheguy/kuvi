@@ -11,8 +11,8 @@ import indexStylesheet from "./index.css?url";
 import appStylesheet from "./App.css?url";
 import { SITE_URL } from "../site.config.mjs";
 
-const SITE_NAME = "kuvi.app";
-const DEFAULT_TITLE = "kuvi.app — open-source web apps and native utilities";
+const SITE_NAME = "kuvi.dev";
+const DEFAULT_TITLE = "kuvi.dev — open-source web apps and native utilities";
 const DEFAULT_DESCRIPTION =
   "A collection of open source web apps and native utilities. Secure transfer, audio tooling, and productivity utilities.";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/kuvi.svg`;
@@ -69,7 +69,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="navbar-container">
               <a href="/" className="navbar-brand">
                 <img src="/kuvi.svg" alt="Kuvi" className="navbar-logo" />
-                <span className="navbar-title">kuvi.app</span>
+                <span className="navbar-title">kuvi.dev</span>
               </a>
 
               <nav className="nav-menu">

@@ -1,6 +1,6 @@
 # Kuvi App
 
-The central hub and landing page for [kuvi.app](https://kuvi.app). This application serves as a portfolio and portal to various web applications and standalone utilities.
+The central hub and landing page for [kuvi.dev](https://kuvi.dev). This application serves as a portfolio and portal to various web applications and standalone utilities.
 
 ## Tech Stack
 

@@ -2,7 +2,7 @@
 // Consumed by react-router.config.ts (prerender), scripts/generate-sitemap.mjs,
 // and the route modules in src/ (canonical / OpenGraph URLs).
 
-export const SITE_URL = "https://kuvi.app";
+export const SITE_URL = "https://kuvi.dev";
 
 export const routes = [
   { path: "/", changefreq: "weekly", priority: "1.0" },

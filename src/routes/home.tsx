@@ -2,7 +2,7 @@ import { platforms } from "../data";
 import type { Route } from "./+types/home";
 import { SITE_URL } from "../../site.config.mjs";
 
-const TITLE = "kuvi.app — open-source web apps and native utilities";
+const TITLE = "kuvi.dev — open-source web apps and native utilities";
 const DESCRIPTION =
   "A collection of open source web apps and native utilities I actively use for secure transfer, audio, and productivity.";
 const OG_IMAGE = `${SITE_URL}/kuvi.svg`;
@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="hero">
-        <h1 className="hero-title">kuvi.app</h1>
+        <h1 className="hero-title">kuvi.dev</h1>
         <p className="hero-tagline">
           A collection of open source web apps and native utilities I actively use
         </p>
