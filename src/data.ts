@@ -5,7 +5,7 @@ export interface Project {
     name: string;
     description: string;
     github: string;
-    subdomain?: string;
+    url?: string;
     category: CategoryId;
     platform: PlatformId;
     icon?: string;
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     // Web Apps
     {
         name: 'QR Secure Share',
-        subdomain: 'qrsecure',
+        url: 'https://qrsecure.kuvi.dev',
         description: 'Offline file transfer and text generation via QR codes.',
         github: 'https://github.com/andrewtheguy/qrcodesecureshare',
         category: 'transfer',
@@ -70,21 +70,14 @@ export const projects: Project[] = [
     },
     {
         name: 'pTransfer',
-        subdomain: 'ptransfer',
-        description: 'Backendless encrypted file and folder transfer over WebRTC, with PIN-based Nostr signaling, offline code exchange, or a Tor onion service.',
+        url: 'https://ptransfer.app',
+        description: 'End-to-end encrypted peer-to-peer file and folder transfer in the browser over WebRTC, paired by a rotating PIN over Nostr, hand-carried codes, or a Tor onion service. No backend, no accounts.',
         github: 'https://github.com/andrewtheguy/ptransfer',
         category: 'transfer',
         platform: 'web',
         icon: '/icons/ptransfer.svg',
     },
     // Standalone Utilities
-    {
-        name: 'pTransfer CLI',
-        description: 'CLI companion for pTransfer: send and receive files over WebRTC with the same PIN-based Nostr handshake, driven by a full-screen TUI wizard.',
-        github: 'https://github.com/andrewtheguy/ptransfer-cli',
-        category: 'transfer',
-        platform: 'standalone',
-    },
     {
         name: 'VAD Transcribe Py',
         description: 'CLI audio transcription tool combining Silero VAD with pluggable ASR backends (Whisper, Moonshine, Qwen3-ASR, GLM-ASR).',
@@ -168,11 +161,11 @@ export const projects: Project[] = [
         icon: '/icons/mywebterm.svg',
     },
     {
-        name: 'RemoteX',
-        description: 'Single-user remote desktop gateway for RDP, VNC, and macOS Screen Sharing, streamed to the browser with remote audio.',
-        github: 'https://github.com/andrewtheguy/remotex',
+        name: 'zDesk',
+        description: 'Single-user browser gateway to Windows Remote Desktop, macOS Screen Sharing, and Linux via wlshare, with remote sound, two-way clipboard, and multi-display support.',
+        github: 'https://github.com/andrewtheguy/zdesk',
         category: 'tools',
         platform: 'web',
-        icon: '/icons/remotex.svg',
+        icon: '/icons/zdesk.svg',
     },
 ];

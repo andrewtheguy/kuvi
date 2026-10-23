@@ -127,9 +127,9 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                       <FallbackIcon size={28} strokeWidth={1.5} aria-hidden />
                     )}
                   </div>
-                  {project.subdomain ? (
+                  {project.url ? (
                     <a
-                      href={`https://${project.subdomain}.kuvi.dev`}
+                      href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card-title"
@@ -150,9 +150,9 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                   <p>{project.description}</p>
 
                   <div className="card-links">
-                    {project.subdomain ? (
+                    {project.url ? (
                       <a
-                        href={`https://${project.subdomain}.kuvi.dev`}
+                        href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link"
