@@ -162,6 +162,7 @@ export const projects: Project[] = [
     },
     {
         name: 'zDesk',
+        url: 'https://zdesk.dev',
         description: 'Single-user browser gateway to Windows Remote Desktop, macOS Screen Sharing, and Linux via wlshare, with remote sound, two-way clipboard, and multi-display support.',
         github: 'https://github.com/andrewtheguy/zdesk',
         category: 'tools',
