@@ -157,7 +157,7 @@ export default function PlatformView({ loaderData }: Route.ComponentProps) {
                         rel="noopener noreferrer"
                         className="link"
                       >
-                        Launch App
+                        {project.urlLabel ?? "Launch App"}
                         <Globe size={16} style={{ marginLeft: "8px" }} />
                       </a>
                     ) : (

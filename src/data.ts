@@ -6,6 +6,7 @@ export interface Project {
     description: string;
     github: string;
     url?: string;
+    urlLabel?: string;
     category: CategoryId;
     platform: PlatformId;
     icon?: string;
@@ -163,6 +164,7 @@ export const projects: Project[] = [
     {
         name: 'zDesk',
         url: 'https://zdesk.dev',
+        urlLabel: 'Visit Website',
         description: 'Single-user browser gateway to Windows Remote Desktop, macOS Screen Sharing, and Linux via wlshare, with remote sound, two-way clipboard, and multi-display support.',
         github: 'https://github.com/andrewtheguy/zdesk',
         category: 'tools',
